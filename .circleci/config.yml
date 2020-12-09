@@ -69,7 +69,8 @@ commands:
 
       - run:
           name: Login to Aliyun CR
-          command: docker login -u $DOCKER_USER -p $DOCKER_PASS $CONTAINER_REPOSITORY
+#          command: docker login -u $DOCKER_USER -p $DOCKER_PASS $CONTAINER_REPOSITORY
+          command: cat /home/circleci/.docker/config.json && docker logout $CONTAINER_REPOSITORY
 
       # Download and cache dependencies
       - restore_cache:
