@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: visits
-          image: spring2go/spring-petclinic-visits-service:1.0.0.RELEASE
+          image: registry.cn-shenzhen.aliyuncs.com/paulli/spring-petclinic-visits-service:1.0.0.RELEASE
+          # ch07-05 对就绪探针的使用
           readinessProbe:
             httpGet:
               path: /actuator/health

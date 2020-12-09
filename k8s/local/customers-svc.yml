@@ -14,10 +14,11 @@ spec:
     spec:
       containers:
         - name: customers
-          image: spring2go/spring-petclinic-customers-service:1.0.0.RELEASE
+          image: registry.cn-shenzhen.aliyuncs.com/paulli/spring-petclinic-customers-service:1.0.0.RELEASE
           resources:
             requests:
               memory: "128Mi"
+              cpu: "200m"
             limits:
               memory: "512Mi"
           env:
