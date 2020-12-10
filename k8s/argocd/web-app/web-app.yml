@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: registry.cn-shenzhen.aliyuncs.com/paulli/spring-petclinic-web-app:1.0.0.RELEASE
+          image: registry.cn-shenzhen.aliyuncs.com/paulli/spring-petclinic-web-app:Build-14-CI
           env:
             - name: SERVER_PORT
               value: "8080"
